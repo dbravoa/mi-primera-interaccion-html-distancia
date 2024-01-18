@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiquetas Principales de HTML</title>
+    <!-- Importando archivos css a nuestro HTML para poner estilos a nuestra web -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Importacion de archivos js a nuestro HTML para poner funcionamiento a nuestra web -->
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <!-- Encabezados -- Titulos del documento -->
+    <!-- h: Header -- Encabezado -->
+    <!-- Encabezados se comprenden por importancia siendo h1 el más importante y h6 el menos importante -->
+    <!-- <h1>Hola mundo</h1>
+    <h2>Esto es un h2</h2>
+    <h3>Esto es un h3</h3>
+    <h4>Esto es un h4</h4>
+    <h5>Esto es un h5</h5>
+    <h6>Esto es un h6</h6> -->
+
+    <!-- Parrafos -- parrafos del documento -->
+    <!-- p: Paragraph -- Parrafo -->
+    <!-- Para poner texto más largo y que no tiene importancia al nivel de un encabezado -->
+    <!-- Podemos usar el comando "lorem" para generar texto automático -->
+    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, quibusdam. Doloribus, iure magnam aliquam
+        nesciunt eum deleniti nostrum facilis quam vel consequuntur natus blanditiis saepe ipsum ipsam fugit delectus
+        mollitia!</p> -->
+
+
+    <!-- Etiquetas de seccion: no muestran nada en la web solamente nos sirven para ordernala -->
+    <!-- Encabezado de la web -->
+    <header>
+        <!-- Ejemplo: Aqui podría ir nuestro menu y alguna oferta que podamos mostrar -->
+        <!-- Especificar el menu de opciones de la web -->
+        <nav></nav>
+    </header>
+
+
+    <!-- Seccion de la web -->
+    <section>
+        <!-- Ejemplo: aqui pondremos nuestro banner  -->
+    </section>
+
+    <section>
+        <!-- Ejemplo: aqui podriamos poner nuestra historia como empresa -->
+    </section>
+
+
+    <!-- Seccion que refleja información de la web -->
+    <article>
+        <!-- Seccion de información -->
+        <section>
+
+            <!-- Elementos de linea: Sirven para trabajar con nuestro texto en la misma linea en la que se presenta -->
+
+            <!-- em: emphasis le da enfasis al texto -->
+            <p>Este es un texto pero <em>quiero resaltar que esta es la parte más importante</em></p>
+
+            <!-- strong: poner en negrita -- no se debe usar porque su funcionamiento puede ser reemplazado por CSS  -->
+            <p>Este es un texto pero necesito <strong> esta parte en negrita</strong></p>
+
+            <!-- small: hace el texto más pequeño -- no se debe usar porque su funcionamiento puede ser reemplazado por CSS  -->
+            <p>Este es un texto normal y <small> este un texto pequeño </small> </p>
+
+
+            <!-- wbr: word breaking rule sirve para romper el texto y separarlo -->
+            <p>estaeslapalabramaslagradelmundoyesquenecesitoutilizarlaetiquetawbrparasepararloyjustamentevoyautilizarlaaqui<wbr>asipodreverelcambio
+            </p>
+
+
+            <!-- span: que nos sirve para separar un elemento  específico de los demas elementos -->
+            <p>Este es un texto pero aqui quiero aplicar algo especial a esta <span style="color: blue;">palabra</span>
+            </p>
+
+            <!-- cite: Da un cambio para reflejar que se habla de una cita -- no se debe usar porque su funcionamiento puede ser reemplazado por CSS -->
+            <p>En el libro de Schopenhauer indica sobre el pesimismo: <cite>El ser humano se odia a sí mismo</cite></p>
+
+
+            <!-- sub & sup: sub subtext sup supertext -- no se debe usar porque su funcionamiento puede ser reemplazado por CSS -->
+            <p>f(x) = x <sup>2</sup>-5 <sub>(3)</sub></p>
+
+
+            <!-- time: especifica en el navegador que estamos hablando de un horario -->
+            <p>La cita que tengo con el doctor es el día <time>23/01/2024 14:00PM</time> </p>
+
+        </section>
+    </article>
+
+
+    <section>
+        <!-- Ejemplo: aqui se mostrarian todos nuestros cursos -->
+        <!-- Contenido principal de la web -->
+        <main>
+            <!-- Ejemplo: Aqui irian nuestros cursos que se encuentren en oferta -->
+            <!-- Etiquetas de bloque: Son parte de la web y ocupan un espacio completo en la web -->
+            <!-- span -->
+            <span>Hola</span>
+            <!-- encabezados -->
+            <h2>Hola, yo soy un subtitulo</h2>
+            <!-- parrafos -->
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quaerat delectus tempora possimus
+                corporis cumque in deleniti porro illo veniam fuga ratione laboriosam iure, autem, sed repellendus eaque
+                mollitia doloribus.</p>
+            <!-- hr: horizontal rule --  regla horizontal -->
+            <hr>
+            <!-- pre: pro-formatted-text -- texto sin formato -->
+            <!-- Evitar que el navegador le ponga algun formato al texto -->
+            <pre>
+                Hola
+                yo
+                soy
+                un
+                texto
+                separado
+            </pre>
+
+            <!-- code: se utiliza para reflejar que estamos poniendo codigo de otros lenguajes -->
+            <!-- Le digo al navegador que estoy mostrando codigo, mas este no es funcional osease que no debe ejecutarlo -->
+            <!-- se debe utilizar junto a la etiqueta pre -->
+            <code>
+                <pre>
+                    ?php
+
+                    echo ("Hola mundo");
+                    ?>
+                </pre>
+            </code>
+
+            <!-- Frases o alguna cita -->
+            <!-- Le estamos indicando al navegador que tenemos citas -->
+            <blockquote>Y entonces Don Quijote dijo: "Ven Sancho Panza salvemos a la princesa Dulcinea"</blockquote>
+
+            <!-- div: etiqueta que sirve para DIVidir el contenido -->
+            <div>
+                <!-- Ejemplo: podriamos poner nuestros libros -->
+                <h3>Libro 1</h3>
+            </div>
+
+            <div>
+                <!-- Ejemplo: podriamos poner nuestros libros -->
+                <h3>Libro 2</h3>
+            </div>
+
+            <div>
+                <!-- Ejemplo: podriamos poner nuestros libros -->
+                <h3>Libro 3</h3>
+            </div>
+
+            <!-- break-rule: Regla de rotura o regla de interrupcion: romper el contenido y pasar al siguiente bloque -->
+
+            <h2>Soy un h2 en un lugar extraño, quiero continuar escribiendo algunas cosas <br> y las seguire escribendo
+                en este siguiente bloque</h2>
+        </main>
+    </section>
+
+    <!-- Para reflejar una información lateral o un menú lateral -->
+    <aside>
+        <!-- Ejemplo: podriamos poner un menu lateral o publicidad -->
+    </aside>
+
+
+    <!-- Pie de pagina de la web -->
+    <footer>
+        <!-- Ejemplo: Iria nuestra información de contacto -->
+    </footer>
+
+
+
+</body>
+
+</html>

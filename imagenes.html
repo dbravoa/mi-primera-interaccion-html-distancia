@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagenes</title>
+</head>
+
+<body>
+
+    <!-- img: image --imagen -->
+    <!-- src: source --origen origen de la imagen que estamos buscando  -->
+    <!-- alt: alternative-text --pondremos una descripción en caso no podamos encontrar la imagen -->
+    <img src="img/pokemon-logo.webp" alt="Titulo de la serie pokemon" desc="" width="400px">
+    <img src="img/evee.png" alt="" width="200px">
+    <img src="img/jolteon.png" alt="" width="200px">
+    <img src="img/mew.png" alt="" width="200px">
+    <!-- Img con src de rutas absolutas -->
+    <img src="https://lumiere-a.akamaihd.net/v1/images/marvel_1b6d0fad.jpeg?region=0,4,2880,1152" alt="" width="500px">
+
+    <!-- picture: imagen --fotografía -->
+
+    <!-- source: origen srcset=sourceset -->
+    <picture>
+        <!-- Cuando el minimo de ancho de la pantalla sea 1000px -->
+        <source srcset="img/spidey-2.png" media="(min-width:1000px)" />
+        <!-- Cuando el minimo de ancho de la pantalla sea de 200px -->
+        <source srcset="img/spidey-1.webp" media="(min-width:200px)" />
+        <img src="img/venom.webp" alt="">
+    </picture>
+
+
+
+
+</body>
+
+</html>
