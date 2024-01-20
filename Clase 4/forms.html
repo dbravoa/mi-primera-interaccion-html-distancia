@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+
+<body>
+
+    <form action="tablas.html">
+        <fieldset>
+            <legend>Datos del Alumno</legend>
+            <label>
+                Nombre:
+                <input type="text" name="" placeholder="Nombre del Alumno" required>
+            </label>
+            <br>
+            <label>
+                Apellido:
+                <input type="text" name="">
+            </label>
+            <br>
+            <label>
+                Sección:
+                <input type="text" name="" readonly>
+            </label>
+            <br>
+            <label>
+                Calificación
+                <input type="number" name="">
+            </label>
+            <br>
+            <label>
+                Fecha de Nacimiento
+                <input type="date" name="">
+            </label>
+            <br>
+            <label>
+                Correo Electrónico
+                <input type="email" name="">
+            </label>
+            <br>
+            <label>
+                Numero Telefonico
+                <input type="tel" name="">
+            </label>
+            <br>
+            <label>
+                Color:
+                <input type="color" name="">
+            </label>
+            <br>
+            <label>
+                Contraseña:
+                <input type="password" name="">
+            </label>
+            <br>
+            <label>
+                Rango de edad:
+                <input type="range" min="0" max="100" value="0" step="10">
+            </label>
+            <br>
+            Género
+            <label>
+                <input type="radio" name="genero">
+                Masculino
+            </label>
+            <label>
+                <input type="radio" name="genero">
+                Femenino
+            </label>
+            <label>
+                <input type="radio" name="genero">
+                Otros
+            </label>
+            <br>
+            <label for="">
+                Pais de Nacimiento
+                <select name="" id="">
+                    <optgroup label="Latinoamerica">
+                        <option value="">Perú</option>
+                        <option value="">Colombia</option>
+                        <option value="">Argentina</option>
+                        <option value="">Chile</option>
+                        <option value="">Ecuador</option>
+                        <option value="">Brasil</option>
+                    </optgroup>
+                    <optgroup label="Europa">
+                        <option value="">España</option>
+                        <option value="">Francia</option>
+                    </optgroup>
+                </select>
+                <br>
+                <label for="">
+                    Paises con datalist
+                    <input list="paises">
+                </label>
+                <datalist id="paises">
+                    <option value="Perú"></option>
+                    <option value="Colombia"></option>
+                    <option value="Colgracia"></option>
+                    <option value="Colombia"></option>
+                    <option value="Colombia"></option>
+                    <option value="Chile"></option>
+                    <option value="Chile"></option>
+                    <option value="Chile"></option>
+                    <option value="Chile"></option>
+                    <option value="Chile"></option>
+                    <option value="Chile"></option>
+                    <option value="Chile"></option>
+                    <option value="Chile"></option>
+                    <option value="Chile"></option>
+                    <option value="Chile"></option>
+                    <option value="Chile"></option>
+                    <option value="Chile"></option>
+                    <option value="Chile"></option>
+                    <option value="Chile"></option>
+                    <option value="Chile"></option>
+                    <option value="Chile"></option>
+                    <option value="Chile"></option>
+                    <option value="Chile"></option>
+                    <option value="Chile"></option>
+                    <option value="Chile"></option>
+                    <option value="Chile"></option>
+                    <option value="Chile"></option>
+                    <option value="Chile"></option>
+                    <option value="Chile"></option>
+                    <option value="Chile"></option>
+                    <option value="Chile"></option>
+                    <option value="Chile"></option>
+                    <option value="Chile"></option>
+                    <option value="Chile"></option>
+                    <option value="Chile"></option>
+                    <option value="Chile"></option>
+                    <option value="Chile"></option>
+                    <option value="Chile"></option>
+                    <option value="Chile"></option>
+                    <option value="Chile"></option>
+                    <option value="Chile"></option>
+                    <option value="Chile"></option>
+                    <option value="Chile"></option>
+                    <option value="Chile"></option>
+                    <option value="Chile"></option>
+                </datalist>
+            </label>
+            <br>
+            <label>
+                <input type="checkbox">
+                Acepto los términos y condiciones
+            </label>
+
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Datos del Apoderado</legend>
+            <label>
+                Nombre:
+                <input type="text" name="">
+            </label>
+            <label>
+                Apellido:
+                <input type="text" name="">
+            </label>
+        </fieldset>
+        <input type="submit" value="Enviar">
+    </form>
+
+</body>
+
+</html>
